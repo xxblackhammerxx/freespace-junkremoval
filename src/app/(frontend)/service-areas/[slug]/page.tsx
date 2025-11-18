@@ -38,7 +38,7 @@ export default async function ServiceAreaPage({ params }: { params: Promise<{ sl
   const defaultHero = {
     title: `${config.business.name} - ${serviceArea.name} ${serviceArea.state}`,
     subtitle: `Professional Services in ${serviceArea.name}, ${serviceArea.state}`,
-    description: `${config.business.name} serves ${serviceArea.name}, ${serviceArea.state} with expert services. ${serviceArea.description} Contact us for [REPLACE services] in ${serviceArea.name}.`,
+    description: `${config.business.name} serves ${serviceArea.name}, ${serviceArea.state} with expert services. ${serviceArea.description} Contact us for ${config.business.mainService} in ${serviceArea.name}.`,
     backgroundImage: serviceArea.image || '/images/default.webp',
   }
 

@@ -109,7 +109,8 @@ export default function About() {
             </div>
             <h3 className="text-xl font-heading font-bold text-brand-dark mb-4">SAFETY FIRST</h3>
             <p className="text-gray-600">
-              Every project begins and ends with safety. Professional procedures protect our team and your property.
+              Every project begins and ends with safety. Professional procedures protect our team
+              and your property.
             </p>
           </div>
 
@@ -177,8 +178,8 @@ export default function About() {
             </div>
             <h3 className="text-xl font-heading font-bold text-brand-dark mb-4">SUSTAINABILITY</h3>
             <p className="text-gray-600">
-              [REPLACE WITH SUSTAINABILITY DESCRIPTION] - Environmentally responsible practices
-              including sustainable methods and responsible resource management on every project.
+              Environmentally responsible practices including sustainable methods and responsible
+              resource management on every project.
             </p>
           </div>
         </div>
