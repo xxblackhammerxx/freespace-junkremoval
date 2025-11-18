@@ -1,0 +1,58 @@
+/* Non-critical CSS - Below the fold and interactive styles */
+@import 'tailwindcss/components';
+
+/* Extended color palette for non-critical elements */
+:root {
+  --color-primary-50: #fdf4f3;
+  --color-primary-100: #fce8e7;
+  --color-primary-200: #f9d2d3;
+  --color-primary-300: #f3aeb0;
+  --color-primary-400: #ec8086;
+  --color-primary-500: #e1525e;
+  --color-primary-600: #cc3246;
+  --color-primary-700: #a02235;
+  --color-primary-800: #902136;
+  --color-primary-900: #7b2034;
+  --color-primary-950: #440d17;
+
+  --color-accent-50: #fffeea;
+  --color-accent-100: #fffbc5;
+  --color-accent-200: #fff785;
+  --color-accent-300: #ffed46;
+  --color-accent-400: #ffde1b;
+  --color-accent-500: #f5b700;
+  --color-accent-600: #e29300;
+  --color-accent-700: #bb6802;
+  --color-accent-800: #985008;
+  --color-accent-900: #7c410b;
+  --color-accent-950: #482200;
+}
+
+/* Non-critical accessibility utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Additional iOS/Safari optimizations */
+* {
+  -webkit-touch-callout: none;
+}

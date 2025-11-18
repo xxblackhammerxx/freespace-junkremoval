@@ -1,0 +1,59 @@
+/* Critical CSS - Above the fold styles only */
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+
+/* Critical color variables */
+:root {
+  --color-primary: #a02235;
+  --color-accent: #f5b700;
+  --color-brand-dark: #1c1c1c;
+  --color-brand-light: #f2f2f2;
+  --font-heading: 'League Spartan', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* Critical typography */
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Critical mobile optimizations */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Critical form styles for iOS */
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+/* Critical viewport fix */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}

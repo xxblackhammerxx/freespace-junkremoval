@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+/* Dynamic theme generated from business configuration */
+@theme {
+  /* Primary Colors */
+  --color-primary: oklch(61.12% 0.1383 46.35);
+  --color-primary-50: oklch(97.00% 0.0138 46.35);
+  --color-primary-100: oklch(94.00% 0.0277 46.35);
+  --color-primary-200: oklch(87.00% 0.0553 46.35);
+  --color-primary-300: oklch(76.00% 0.0830 46.35);
+  --color-primary-400: oklch(64.00% 0.1107 46.35);
+  --color-primary-500: oklch(61.12% 0.1383 46.35);
+  --color-primary-600: oklch(48.89% 0.1522 46.35);
+  --color-primary-700: oklch(39.73% 0.1453 46.35);
+  --color-primary-800: oklch(30.56% 0.1245 46.35);
+  --color-primary-900: oklch(24.45% 0.1107 46.35);
+  --color-primary-950: oklch(15.28% 0.0830 46.35);
+
+  
+  /* Accent Colors */
+  --color-accent: oklch(45.57% 0.0630 124.58);
+  --color-accent-50: oklch(97.00% 0.0100 124.58);
+  --color-accent-100: oklch(94.00% 0.0200 124.58);
+  --color-accent-200: oklch(87.00% 0.0300 124.58);
+  --color-accent-300: oklch(76.00% 0.0400 124.58);
+  --color-accent-500: oklch(45.57% 0.0630 124.58);
+  --color-accent-400: oklch(64.00% 0.0504 124.58);
+  --color-accent-600: oklch(45.00% 0.0693 124.58);
+  --color-accent-700: oklch(35.00% 0.0662 124.58);
+  --color-accent-800: oklch(28.00% 0.0567 124.58);
+  --color-accent-900: oklch(22.00% 0.0504 124.58);
+  --color-accent-950: oklch(12.00% 0.0378 124.58);
+
+
+  --color-brand-dark: #1c1c1c;
+  --color-brand-light: #f2f2f2;
+}
+
+:root {
+  --font-mono: 'Roboto Mono', monospace;
+  --font-heading: 'League Spartan', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* Apply fonts to default elements */
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* iOS/Safari specific fixes for mobile responsiveness */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix for iOS Safari floating line/border issues */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* Prevent iOS Safari zoom on form inputs */
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+/* Fix for iOS Safari viewport issues */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
