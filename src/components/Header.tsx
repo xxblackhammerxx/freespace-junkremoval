@@ -114,9 +114,8 @@ const Header = () => {
               <Image
                 src={config.branding.logo.main}
                 alt={config.business.name}
-                width={250}
+                width={220}
                 height={50}
-                className="h-8 sm:h-10 md:h-12 w-auto"
               />
             </Link>
           </div>

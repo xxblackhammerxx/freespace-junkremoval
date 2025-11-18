@@ -36,8 +36,8 @@ export default function ServicesPage() {
               {config.contact.address.serviceArea.toUpperCase()} PROFESSIONAL SERVICES
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto px-4">
-              At {config.business.name}, we are {config.contact.address.serviceArea}'s trusted
-              professional service contractors. {config.business.description}
+              At {config.business.name}, we are {config.contact.address.serviceArea}'s trusted{' '}
+              {config.business.mainRole}s. {config.business.description}. 
               We serve residential and commercial clients throughout{' '}
               {config.contact.address.serviceArea} with precision, reliability, and complete
               satisfaction guaranteed.

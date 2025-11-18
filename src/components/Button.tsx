@@ -1,7 +1,5 @@
 'use client'
 
-import { triggerCRMWidget } from './CRMWidget'
-
 interface ButtonProps {
   children: React.ReactNode
   variant?: 'primary' | 'secondary' | 'accent'
@@ -12,10 +10,6 @@ interface ButtonProps {
   type?: 'button' | 'submit' | 'reset'
   // Accessibility props
   'aria-label'?: string
-  // CRM Integration props
-  crmTrigger?: boolean
-  serviceType?: string
-  leadSource?: string
 }
 
 const Button = ({
@@ -27,9 +21,6 @@ const Button = ({
   className = '',
   type = 'button',
   'aria-label': ariaLabel,
-  crmTrigger = false,
-  serviceType,
-  leadSource,
 }: ButtonProps) => {
   const baseClasses = 'inline-block font-bold rounded-lg transition-all duration-300 text-center'
 
@@ -46,28 +37,6 @@ const Button = ({
   }
 
   const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`
-
-  // Handle CRM trigger click
-  const handleCRMClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    triggerCRMWidget(serviceType, leadSource)
-  }
-
-  // If CRM trigger is enabled, use special handling
-  if (crmTrigger) {
-    return (
-      <button
-        type="button"
-        onClick={handleCRMClick}
-        className={classes}
-        data-service-type={serviceType}
-        data-lead-source={leadSource}
-        aria-label={ariaLabel}
-      >
-        {children}
-      </button>
-    )
-  }
 
   if (href) {
     const isExternal = href.startsWith('http') || href.startsWith('//')

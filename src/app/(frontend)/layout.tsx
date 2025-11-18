@@ -21,16 +21,16 @@ const openSans = Open_Sans({
 
 export const metadata = {
   title: {
-    default: 'Professional Services',
-    template: '%s | Gainz Template',
+    default: 'Free Space Junk Removal & Cleaning | Northern Utah Junk Removal',
+    template: '%s | Free Space Junk Removal & Cleaning',
   },
   description:
-    'Expert demolition and remodeling services for kitchens, bathrooms, and homes. Licensed contractors with 15+ years experience. Free estimates, insured, and trusted by homeowners.',
+    'Professional junk removal and cleaning services throughout Northern Utah. Transparent pricing, eco-friendly disposal, same-day service. Serving Ogden, Logan, Brigham City, and Cache Valley.',
   keywords:
-    'demolition services, kitchen remodel, bathroom renovation, home demolition, selective demolition, cabinet removal, floor removal, junk removal, licensed contractors',
-  authors: [{ name: 'Gainz Template' }],
-  creator: 'Gainz Template',
-  publisher: 'Gainz Template',
+    'junk removal utah, junk removal ogden, junk removal logan, junk removal brigham city, appliance removal utah, furniture removal utah, same day junk removal, eco friendly junk removal, northern utah junk hauling, garage cleaning utah, construction debris removal',
+  authors: [{ name: 'Free Space Junk Removal & Cleaning' }],
+  creator: 'Free Space Junk Removal & Cleaning',
+  publisher: 'Free Space Junk Removal & Cleaning',
   robots: {
     index: true,
     follow: true,
@@ -45,25 +45,25 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://gainz-template-1.com',
-    siteName: 'Gainz Template',
-    title: 'Gainz Template | Professional Services',
+    url: 'https://freespace-junkremoval.com',
+    siteName: 'Free Space Junk Removal & Cleaning',
+    title: 'Free Space Junk Removal & Cleaning | Northern Utah Junk Removal',
     description:
-      'Expert demolition and remodeling services for kitchens, bathrooms, and homes. Licensed contractors with 15+ years experience.',
+      'Professional junk removal and cleaning services throughout Northern Utah. Transparent pricing, eco-friendly disposal, same-day service available.',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
         width: 1200,
         height: 630,
-        alt: 'Gainz Template Services',
+        alt: 'Free Space Junk Removal & Cleaning Services',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gainz Template | Professional Services',
+    title: 'Free Space Junk Removal & Cleaning | Northern Utah Junk Removal',
     description:
-      'Expert demolition and remodeling services for kitchens, bathrooms, and homes. Licensed contractors with 15+ years experience.',
+      'Professional junk removal and cleaning services throughout Northern Utah. Transparent pricing, eco-friendly disposal, same-day service available.',
     images: [
       'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     ],
