@@ -19,7 +19,7 @@ You will receive a JSON file with the new simplified flat structure:
       "businessName": "Pantry's Plumbing Services",
       "websiteUrl": "https://pantrysplumbing.com",
       "businessAddress": "142 bonneville circle, kaysville, UT 84037",
-      "businessContactPhoneNumber": "8017253334",
+      "businessContactPhoneNumber": "3853268426",
       "businessContactEmail": "pantrysplumbing@gmail.com",
       "locationsYouServe": "Ogden County, Weber County, Cache County, Box Elder County...",
       "dateFounded": "Nov 2023",

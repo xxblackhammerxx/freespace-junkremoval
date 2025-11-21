@@ -16,7 +16,7 @@ const CTASection = ({
   description = '',
   primaryButtonText = 'Get Free Estimate',
   primaryButtonLink = '/contact',
-  secondaryButtonText = 'Call 801-997-8904',
+  secondaryButtonText = 'Call 385-326-8426',
   showPhoneButton = true,
 }: CTASectionProps) => {
   const config = getBusinessConfig()
@@ -34,7 +34,7 @@ const CTASection = ({
             {primaryButtonText}
           </Button>
           {showPhoneButton && (
-            <Button href="tel:8019978904" variant="secondary" size="lg">
+            <Button href="tel:3853268426" variant="secondary" size="lg">
               {secondaryButtonText}
             </Button>
           )}

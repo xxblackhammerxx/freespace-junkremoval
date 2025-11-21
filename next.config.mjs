@@ -21,6 +21,14 @@ const nextConfig = {
     qualities: [75, 80, 85], // Configure allowed quality values
     dangerouslyAllowSVG: false,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 
   turbopack: {

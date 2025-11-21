@@ -4,6 +4,7 @@ import Button from '@/components/Button'
 import FAQ from '@/components/FAQ'
 import Hero from '@/components/Hero'
 import Layout from '@/components/Layout'
+import PricingSummary from '@/components/PricingSummary'
 import Section from '@/components/Section'
 import ServiceCard from '@/components/ServiceCard'
 import Testimonials from '@/components/Testimonials'
@@ -69,6 +70,11 @@ export default function HomePage() {
             </Button>
           </div>
         </AnimatedSection>
+      </Section>
+
+      {/* Pricing Summary */}
+      <Section background="gray" paddingY="xl">
+        <PricingSummary />
       </Section>
 
       {/* Service Process */}

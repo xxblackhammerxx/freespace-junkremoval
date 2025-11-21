@@ -72,14 +72,15 @@ export const businessConfig: BusinessConfig = {
         children: [
           { label: 'All Services', href: '/services', type: 'link' },
           { label: 'Single Item Pickup', href: '/services/single-item-pickup', type: 'link' },
-          { label: 'F-150 Truck Load', href: '/services/f150-truck-load', type: 'link' },
-          { label: '1/4 Load Removal', href: '/services/quarter-load', type: 'link' },
-          { label: '1/2 Load Removal', href: '/services/half-load', type: 'link' },
+          { label: 'Truck Load', href: '/services/truck-load', type: 'link' },
+          { label: '1/4 Load Removal', href: '/services/quarter-trailer-load', type: 'link' },
+          { label: '1/2 Load Removal', href: '/services/half-trailer-load', type: 'link' },
           { label: 'Trailer Full Load', href: '/services/trailer-full-load', type: 'link' },
           { label: 'Appliance Removal', href: '/services/appliance-removal', type: 'link' },
           { label: 'Garage Cleaning', href: '/services/garage-cleaning', type: 'link' },
         ],
       },
+      { label: 'Pricing', href: '/pricing', type: 'link', showInMobile: true },
       {
         label: 'Service Areas',
         type: 'dropdown',
@@ -111,7 +112,7 @@ export const businessConfig: BusinessConfig = {
           title: 'Services',
           links: [
             { label: 'Single Item Pickup', href: '/services/single-item-pickup' },
-            { label: 'F-150 Truck Load', href: '/services/f150-truck-load' },
+            { label: 'Truck Load', href: '/services/truck-load' },
             { label: 'Appliance Removal', href: '/services/appliance-removal' },
             { label: 'Garage Cleaning', href: '/services/garage-cleaning' },
           ],
@@ -139,8 +140,8 @@ export const businessConfig: BusinessConfig = {
 
   contact: {
     phone: {
-      display: '(555) 123-4567', // Placeholder as phone not provided
-      link: 'tel:5551234567',
+      display: '(385) 326-8426',
+      link: 'tel:3853268426',
     },
     email: {
       main: 'contact@freedomremoval.com',
@@ -338,12 +339,12 @@ export const businessConfig: BusinessConfig = {
     },
     {
       id: 'f150-truck-load',
-      name: 'F-150 Truck Full Load',
+      name: 'Truck Full Load',
       slug: 'f150-truck-load',
       shortDescription:
-        'Professional F-150 truck load junk removal service for medium-sized cleanouts throughout Northern Utah. Transparent pricing and eco-friendly disposal guaranteed.',
+        'Professional truck load junk removal service for medium-sized cleanouts throughout Northern Utah. Transparent pricing and eco-friendly disposal guaranteed.',
       longDescription:
-        'Our F-150 truck load service is perfect for medium-sized junk removal projects including room cleanouts, garage organization, or small renovation debris. This service handles approximately 6-8 cubic yards of materials with transparent upfront pricing.',
+        'Our truck load service is perfect for medium-sized junk removal projects including room cleanouts, garage organization, or small renovation debris. This service handles approximately 6-8 cubic yards of materials with transparent upfront pricing.',
       features: [
         'Holds 6-8 cubic yards of junk',
         'Perfect for room cleanouts',
@@ -354,28 +355,28 @@ export const businessConfig: BusinessConfig = {
       ],
       image: '/images/f150-truck-load.jpg',
       category: 'junk removal',
-      buttonText: 'Schedule F-150 Truck Load',
+      buttonText: 'Schedule Truck Load',
       isActive: true,
       seo: {
-        title: 'F-150 Truck Load Junk Removal Utah | Free Space Junk Removal',
+        title: 'Truck Load Junk Removal Utah | Free Space Junk Removal',
         description:
-          'Medium-sized junk removal service in Northern Utah. F-150 truck loads perfect for room cleanouts, garage cleaning. Transparent pricing, same-day service.',
+          'Medium-sized junk removal service in Northern Utah. Truck loads perfect for room cleanouts, garage cleaning. Transparent pricing, same-day service.',
       },
       content: {
         hero: {
-          title: 'F-150 TRUCK LOAD JUNK REMOVAL',
+          title: 'TRUCK LOAD JUNK REMOVAL',
           subtitle: 'Perfect for Medium-Sized Cleanouts',
           description:
-            'Our F-150 truck load service handles medium-sized junk removal projects with transparent pricing and professional service. Ideal for room cleanouts, garage organization, or small renovation projects throughout Northern Utah.',
+            'Our truck load service handles medium-sized junk removal projects with transparent pricing and professional service. Ideal for room cleanouts, garage organization, or small renovation projects throughout Northern Utah.',
         },
         sections: {
           mainContent: {
             title: 'Professional Medium-Volume Junk Removal',
             content: [
-              'The F-150 truck load service is our most popular option for homeowners tackling medium-sized cleanout projects. With capacity for 6-8 cubic yards of materials, this service bridges the gap between single item pickups and large-scale demolition projects.',
-              'Our professional team arrives with a fully equipped F-150 truck and the expertise to handle everything from furniture and appliances to construction debris and household clutter. Every load is carefully sorted for maximum recycling and donation potential.',
+              'The truck load service is our most popular option for homeowners tackling medium-sized cleanout projects. With capacity for 6-8 cubic yards of materials, this service bridges the gap between single item pickups and large-scale demolition projects.',
+              'Our professional team arrives with a fully equipped truck and the expertise to handle everything from furniture and appliances to construction debris and household clutter. Every load is carefully sorted for maximum recycling and donation potential.',
               'Unlike national chains that provide vague "starting at" pricing, we offer transparent costs online before we roll. You know exactly what you\'re paying for the entire truck load, with no hidden fees or surprise charges.',
-              'Each F-150 truck load service includes photo documentation, professional loading, responsible disposal, and detailed impact reporting showing how your junk contributed to local recycling and donation efforts.',
+              'Each truck load service includes photo documentation, professional loading, responsible disposal, and detailed impact reporting showing how your junk contributed to local recycling and donation efforts.',
             ],
           },
         },
