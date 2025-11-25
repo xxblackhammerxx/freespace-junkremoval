@@ -181,7 +181,7 @@ export default function HomePage() {
                   <h3 className="text-xl font-heading font-bold text-brand-dark mb-2">
                     LICENSED & INSURED PROFESSIONALS
                   </h3>
-                  <p className="text-gray-600">Expert care from our Master Plumber</p>
+                  <p className="text-gray-600">Professional junk removal with full licensing and insurance coverage for your peace of mind</p>
                 </div>
               </div>
 
@@ -223,15 +223,14 @@ export default function HomePage() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-bold text-brand-dark mb-2">We care</h3>
+                  <h3 className="text-xl font-heading font-bold text-brand-dark mb-2">TRANSPARENT PRICING</h3>
                   <p className="text-gray-600">
-                    As {config.business.generalServiceArea} locals, we are deeply committed to our
-                    community and provide personalized service with a genuine touch.
+                    Get real pricing online before we arrive - no surprise fees, inflated quotes, or hidden costs. What you see is what you pay.
                   </p>
                 </div>
               </div>
@@ -248,25 +247,16 @@ export default function HomePage() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                     />
                   </svg>
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-bold text-brand-dark mb-2">
-                    LOCAL SERVICE EXPERTS
+                    LOCAL ENVIRONMENTAL IMPACT
                   </h3>
                   <p className="text-gray-600">
-                    As the premier local {config.business.mainRole} in{' '}
-                    {config.contact.address.serviceArea}, we have unparalleled knowledge of local
-                    building codes and requirements. Our exceptional services guarantee compliance
-                    and superior community-focused project management.
+                    As {config.business.generalServiceArea} locals, we partner with local charities and recycling centers. You'll receive photo documentation showing exactly how your junk was recycled, donated, or properly disposed of in our community.
                   </p>
                 </div>
               </div>
@@ -276,19 +266,23 @@ export default function HomePage() {
           <div className="relative">
             <div>
               <Image
-                src="/images/default.webp"
-                alt="Why Choose Us"
+                src="/images/why-we-are-the-best.jpeg"
+                alt="Why We Are The Best - Free Space Junk Removal Team"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-lg">
+            <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg">
               <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-brand-dark">
-                  {config.business.experience}
+                <div className="text-2xl font-heading font-bold mb-2">
+                  TRANSPARENT PRICING
                 </div>
-                <div className="text-sm font-semibold text-brand-dark">YEARS EXPERIENCE</div>
+                <div className="text-sm font-medium mb-3">No Hidden Fees Ever</div>
+                <div className="text-lg font-bold">
+                  LOCAL & TRUSTED
+                </div>
+                <div className="text-xs font-medium">Northern Utah Experts</div>
               </div>
             </div>
           </div>

@@ -430,7 +430,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-xl font-heading font-bold text-brand-dark mb-2">OFFICE</h3>
                   <p className="text-gray-600 mb-2">
-                    {config.contact.address.city}, {config.contact.address.state}
+                    {config.contact.address.street}<br />
+                    {config.contact.address.city}, {config.contact.address.state} {config.contact.address.zip}
                   </p>
                   <p className="text-gray-600 text-sm">By appointment only</p>
                 </div>

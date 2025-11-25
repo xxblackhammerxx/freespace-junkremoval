@@ -20,14 +20,26 @@ const PricingSummary = () => {
     {
       name: '1/2 Trailer Load',
       price: '$320',
-      description: 'Great for larger cleanouts',
-      features: ['Estate cleanouts', 'Commercial projects'],
+      description: 'Great for multi-room cleanouts',
+      features: ['Multi-room projects', 'Commercial cleanouts'],
     },
     {
       name: 'Full Trailer Load',
       price: '$490',
       description: 'Maximum capacity projects',
       features: ['Complete house cleanouts', 'Construction cleanup'],
+    },
+    {
+      name: 'Multi Trailer Load',
+      price: '$849',
+      description: 'Great for estate cleanouts',
+      features: ['Estate cleanouts', 'Large property clearing'],
+    },
+    {
+      name: 'Custom Haul',
+      price: 'Call for Quote',
+      description: 'Specialized pricing for unique projects',
+      features: ['Custom assessment', 'Flexible solutions'],
     },
   ]
 
@@ -46,7 +58,7 @@ const PricingSummary = () => {
         </AnimatedSection>
 
         {/* Pricing Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {keyPrices.map((service, index) => (
             <AnimatedSection key={service.name} delay={100 * (index + 1)}>
               <div className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-primary hover:shadow-lg transition-all duration-300 h-full flex flex-col">

@@ -59,11 +59,11 @@ const pricingData = {
     {
       name: '1/2 Trailer Load',
       price: '$320',
-      description: 'Excellent for larger cleanouts and substantial junk removal projects',
+      description: 'Great for multi-room cleanouts and substantial junk removal projects',
       features: [
         'Half trailer capacity',
-        'Large-scale cleanouts',
-        'Estate cleanout services',
+        'Multi-room cleanouts',
+        'Large-scale residential projects',
         'Commercial junk removal',
       ],
     },
@@ -76,6 +76,28 @@ const pricingData = {
         'Complete house cleanouts',
         'Large commercial projects',
         'Construction site cleanup',
+      ],
+    },
+    {
+      name: 'Multi Trailer Load',
+      price: '$849',
+      description: 'Great for estate cleanouts and massive property clearing projects',
+      features: [
+        'Multiple trailer capacity',
+        'Estate cleanouts',
+        'Large property clearing',
+        'Major renovation debris',
+      ],
+    },
+    {
+      name: 'Custom Haul',
+      price: 'Call for Quote',
+      description: 'Specialized pricing for unique or oversized projects',
+      features: [
+        'Custom project assessment',
+        'Specialized equipment if needed',
+        'Flexible scheduling options',
+        'Tailored service solutions',
       ],
     },
   ],

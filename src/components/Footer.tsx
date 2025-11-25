@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="mt-8 pt-8 border-t border-gray-700 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-8 pt-8 border-t border-gray-700 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="text-center md:text-left">
             <h5 className="font-heading font-bold text-accent mb-2">PHONE</h5>
             <p className="text-gray-300">
@@ -99,6 +99,13 @@ const Footer = () => {
               >
                 {config.contact.email.main}
               </a>
+            </p>
+          </div>
+          <div className="text-center md:text-left">
+            <h5 className="font-heading font-bold text-accent mb-2">ADDRESS</h5>
+            <p className="text-gray-300">
+              {config.contact.address.street}<br />
+              {config.contact.address.city}, {config.contact.address.state} {config.contact.address.zip}
             </p>
           </div>
           <div className="text-center md:text-left">

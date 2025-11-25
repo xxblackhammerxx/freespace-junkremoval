@@ -24,59 +24,48 @@ export default function About() {
         description={`${config.business.missionStatement} Established in ${config.business.yearEstablished}.`}
         buttonText="Get Started Today"
         buttonLink="/contact"
-        backgroundImage="/images/floor-demo-team.jpg"
+        backgroundImage="/images/north-utah-ogden-mountain.jpeg"
       />
 
       {/* Company Story */}
       <Section paddingY="xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-4xl font-heading font-bold text-brand-dark mb-6">OUR STORY</h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-heading font-bold text-brand-dark mb-6">OUR STORY</h2>
+          <div className="bg-accent p-6 rounded-lg shadow-lg inline-block mb-8">
+            <div className="text-center">
+              <div className="text-3xl font-heading font-bold text-brand-dark">
+                {config.business.yearEstablished}
+              </div>
+              <div className="text-sm font-semibold text-brand-dark">ESTABLISHED</div>
+            </div>
+          </div>
+          <div className="text-left space-y-6">
+            <p className="text-lg text-gray-600 leading-relaxed">
               {config.business.missionStatement}
             </p>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Established in {config.business.yearEstablished}, {config.business.name} has been
               dedicated to serving {config.contact.address.serviceArea} with professional, reliable
               services. With {config.business.experience} years of experience, our commitment to
               excellence and customer satisfaction has earned us the trust of countless satisfied
               clients.
             </p>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               As a locally owned and operated company, we take pride in knowing and serving the
               great people in {config.contact.address.serviceArea} as valued neighbors. We're more
               than just a service company - we're passionate about building lasting relationships
               with our community.
             </p>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               {config.business.description} Equipped with professional-grade tools and extensive
               industry knowledge, our team gets the job done efficiently and reliably, making us the
               go-to choice for all your service needs.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Today, we're proud to be a leading provider of professional services throughout{' '}
               {config.contact.address.serviceArea}, with a team of experienced professionals who
               bring expertise, integrity, and passion to every project.
             </p>
-            <Button href="/gallery" variant="primary" size="lg">
-              See Our Work
-            </Button>
-          </div>
-          <div className="relative">
-            <div
-              className="bg-contain bg-center bg-no-repeat rounded-lg h-[500px] lg:h-[600px] shadow-xl"
-              style={{
-                backgroundImage: "url('/images/owner-couple-image-sam-emily.jpg')",
-              }}
-            ></div>
-            <div className="absolute -bottom-6 -right-6 bg-accent p-6 rounded-lg shadow-lg">
-              <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-brand-dark">
-                  {config.business.yearEstablished}
-                </div>
-                <div className="text-sm font-semibold text-brand-dark">ESTABLISHED</div>
-              </div>
-            </div>
           </div>
         </div>
       </Section>
@@ -316,6 +305,7 @@ export default function About() {
                 <ul className="space-y-1 text-gray-600">
                   <li>• Phone: {config.contact.phone.display}</li>
                   <li>• Email: {config.contact.email.main}</li>
+                  <li>• Address: {config.contact.address.street}, {config.contact.address.city}, {config.contact.address.state} {config.contact.address.zip}</li>
                   <li>• Service Area: {config.contact.address.serviceArea}</li>
                 </ul>
               </div>
@@ -325,10 +315,17 @@ export default function About() {
             </Button>
           </div>
           <div className="rounded-lg h-96 overflow-hidden shadow-lg">
-            <div className="bg-gray-300 h-full flex items-center justify-center">
-              <p className="text-gray-600">Service Area Map</p>
-              {/* You can integrate a real map service here */}
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.1234567890123!2d-111.85535!3d41.62755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s375%20E%20300%20S%2C%20Hyrum%2C%20UT%2084319!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Free Space Junk Removal Location - 375 E 300 S, Hyrum, UT 84319"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </Section>
