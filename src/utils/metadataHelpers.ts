@@ -49,8 +49,9 @@ export function getBaseMetadata(): Metadata {
 export function getHomeMetadata(): Metadata {
   return {
     ...getBaseMetadata(),
-    title: `${config.business.name} | ${config.business.tagline}`,
-    description: `${config.business.description} Serving ${config.contact.address.serviceArea} with ${config.business.experience} years of experience. Licensed, insured, and trusted by homeowners.`,
+    title: `Junk Removal Near Me | #1 ${config.contact.address.serviceArea} Junk Removal Service`,
+    description: `Looking for junk removal near me? Free Space Junk Removal is Northern Utah's #1 rated junk removal service. Same-day pickup, transparent pricing, eco-friendly disposal. Serving Ogden, Logan, Brigham City with professional junk hauling services. Call now for immediate junk removal near you!`,
+    keywords: 'junk removal near me, junk hauling near me, same day junk removal, furniture removal near me, appliance removal near me, junk removal services near me, northern utah junk removal, ogden junk removal, logan junk removal, local junk removal, residential junk removal, commercial junk removal'
   }
 }
 
@@ -182,13 +183,16 @@ export function getServiceAreaMetadata(areaSlug: string): Metadata {
  * Generate structured data for the organization
  */
 export function getOrganizationStructuredData() {
+  const serviceAreas = getActiveServiceAreas()
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
+    '@id': config.website.url,
     name: config.business.name,
-    description: config.business.description,
+    alternateName: 'Free Space Junk Removal',
+    description: 'Professional junk removal and hauling services throughout Northern Utah. Same-day pickup, transparent pricing, eco-friendly disposal.',
     url: config.website.url,
-    telephone: config.contact.phone.link,
+    telephone: config.contact.phone.display,
     email: config.contact.email.main,
     address: {
       '@type': 'PostalAddress',
@@ -196,11 +200,96 @@ export function getOrganizationStructuredData() {
       addressRegion: config.contact.address.state,
       postalCode: config.contact.address.zip,
       streetAddress: config.contact.address.street,
+      addressCountry: 'US'
     },
-    areaServed: config.contact.address.serviceArea,
+    areaServed: [
+      {
+        '@type': 'State',
+        name: 'Utah'
+      },
+      {
+        '@type': 'City',
+        name: 'Ogden',
+        containedInPlace: {
+          '@type': 'State',
+          name: 'Utah'
+        }
+      },
+      {
+        '@type': 'City', 
+        name: 'Logan',
+        containedInPlace: {
+          '@type': 'State',
+          name: 'Utah'
+        }
+      },
+      {
+        '@type': 'City',
+        name: 'Brigham City', 
+        containedInPlace: {
+          '@type': 'State',
+          name: 'Utah'
+        }
+      }
+    ],
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '41.7323',
+      longitude: '-111.8766'
+    },
     logo: `${config.website.url}${config.branding.logo.main}`,
     image: `${config.website.url}${config.branding.logo.main}`,
     foundingDate: config.business.yearEstablished.toString(),
-    slogan: config.business.tagline,
+    slogan: 'Northern Utah\'s Premier Junk Removal Experts',
+    priceRange: '$$',
+    paymentAccepted: ['Cash', 'Credit Card', 'Check'],
+    openingHours: 'Mo-Su 07:00-19:00',
+    serviceArea: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: '41.7323',
+        longitude: '-111.8766'
+      },
+      geoRadius: '50000'
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Junk Removal Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Residential Junk Removal',
+            description: 'Professional junk removal services for homes throughout Northern Utah'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service', 
+            name: 'Commercial Junk Removal',
+            description: 'Business junk hauling and cleanout services for Northern Utah companies'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Appliance Removal',
+            description: 'EPA-compliant appliance disposal and recycling throughout Northern Utah'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Furniture Removal',
+            description: 'Professional furniture hauling and disposal services in Northern Utah'
+          }
+        }
+      ]
+    }
   }
 }
