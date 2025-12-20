@@ -9,11 +9,11 @@ export const BlogPosts: CollectionConfig = {
   },
   access: {
     // Allow public read access
-    // read: () => true,
+    read: () => true,
     // TEMPORARY: Allow all creates for debugging
-    // create: () => true,
-    // update: ({ req: { user } }) => !!user,
-    // delete: ({ req: { user } }) => !!user,
+    create: () => true,
+    update: ({ req: { user } }) => !!user,
+    delete: ({ req: { user } }) => !!user,
   },
   fields: [
     {
