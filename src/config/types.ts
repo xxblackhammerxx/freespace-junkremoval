@@ -8,6 +8,7 @@ export interface TestimonialData {
 
 export interface BusinessConfig {
   // Core Business Information
+  clientId?: string
   business: {
     name: string
     tagline: string

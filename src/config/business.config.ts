@@ -4,6 +4,7 @@
 import { BusinessConfig } from './types'
 
 export const businessConfig: BusinessConfig = {
+  clientId: '6',
   business: {
     name: 'Free Space Junk Removal & Cleaning',
     tagline: "Northern Utah's Premier Junk Removal Experts",
