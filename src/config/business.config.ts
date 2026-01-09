@@ -134,8 +134,8 @@ export const businessConfig: BusinessConfig = {
       showServiceAreas: true,
     },
     cta: {
-      text: 'Get Quote',
-      href: '/contact',
+      text: 'Schedule Your Removal',
+      href: 'https://calendar.app.google/S8TaQaP9DRGngVtV7',
       type: 'button',
     },
   },

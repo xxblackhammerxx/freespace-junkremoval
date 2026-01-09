@@ -100,6 +100,38 @@ export default function Contact() {
                 📞 Call Now: {config.contact.phone.display}
               </Button>
             </div>
+
+            {/* Google Calendar Scheduling */}
+            <div className="mb-8 text-center">
+              <h3 className="text-2xl font-heading font-bold text-brand-dark mb-4">
+                Schedule Your Junk Removal
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Book your appointment online and get started right away
+              </p>
+              
+              {/* Google Calendar Appointment Scheduling begin */}
+              <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet"/>
+              <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    (function() {
+                      var target = document.currentScript;
+                      window.addEventListener('load', function() {
+                        calendar.schedulingButton.load({
+                          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2AqtZJq9tK525xatbu_cOP-YHZQbrO8HZf4tkQ5LSuAAHUWVoMIeHIZ553E376dnnJ8BQdpJws?gv=true',
+                          color: '#039BE5',
+                          label: 'Book an appointment',
+                          target,
+                        });
+                      });
+                    })();
+                  `
+                }}
+              />
+              {/* end Google Calendar Appointment Scheduling */}
+            </div>
           </div>
 
           {/* Contact Form */}

@@ -550,8 +550,8 @@ export default function HomePage() {
                 Ready to schedule junk removal near you? Get a free, no-obligation estimate for your Northern Utah junk hauling project. Our transparent pricing means you'll know exactly what your junk removal will cost before we arrive - no surprise fees or inflated quotes. Whether you need same-day service or want to schedule ahead, our junk removal experts are ready to help with professional, reliable service throughout Northern Utah.
               </p>
               <div className="space-y-4">
-                <Button href="/contact" variant="primary" size="lg" className="w-full">
-                  Get Free Junk Removal Quote
+                <Button href="https://calendar.app.google/S8TaQaP9DRGngVtV7" variant="primary" size="lg" className="w-full">
+                  Schedule Your Removal
                 </Button>
                 <div className="text-center">
                   <p className="text-sm text-gray-600">

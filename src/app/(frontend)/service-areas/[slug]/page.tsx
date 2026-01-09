@@ -67,8 +67,8 @@ export default async function ServiceAreaPage({ params }: { params: Promise<{ sl
         title={hero.title || defaultHero.title}
         subtitle={hero.subtitle || defaultHero.subtitle}
         description={hero.description || defaultHero.description}
-        buttonText={`Get Free ${serviceArea.name} ${serviceArea.state} Quote`}
-        buttonLink="/contact"
+        buttonText={`Schedule Removal in ${serviceArea.name}, ${serviceArea.state}`}
+        buttonLink="https://calendar.app.google/S8TaQaP9DRGngVtV7"
         backgroundImage={hero.backgroundImage || defaultHero.backgroundImage}
       />
 

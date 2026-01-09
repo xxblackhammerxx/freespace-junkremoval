@@ -56,8 +56,8 @@ const Hero = ({
               <Button href={buttonLink} variant="primary" size="lg">
                 {buttonText}
               </Button>
-              <Button href="/contact" variant="accent" size="lg">
-                Get Quote
+              <Button href="https://calendar.app.google/S8TaQaP9DRGngVtV7" variant="accent" size="lg">
+                Schedule Your Removal
               </Button>
             </div>
           )}

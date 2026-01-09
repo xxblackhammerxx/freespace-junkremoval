@@ -52,13 +52,26 @@ export const metadata = {
       'Professional junk removal and cleaning services throughout Northern Utah. Transparent pricing, eco-friendly disposal, same-day service available.',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+        url: 'https://freespace-junkremoval.com/images/logo-main.svg',
         width: 1200,
         height: 630,
         alt: 'Free Space Junk Removal & Cleaning Services',
       },
     ],
   },
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   twitter: {
     card: 'summary_large_image',
     title: 'Free Space Junk Removal & Cleaning | Northern Utah Junk Removal',
@@ -102,7 +115,6 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
             }}
           />
         )}
-        <link rel="icon" href="/images/logo-icon.svg" sizes="any" type="image/svg+xml" />
       </head>
       <body className={`${openSans.variable} ${leagueSpartan.variable}`}>
         {/* Google Tag Manager (noscript) */}

@@ -25,8 +25,8 @@ export default function ServiceAreasPage() {
         title="SERVICE AREAS"
         subtitle={`Local Service Contractor Serving ${config.contact.address.serviceArea}`}
         description={`${config.business.name} provides professional services throughout ${config.contact.address.serviceArea}. Our experienced team specializes in residential and commercial projects with comprehensive service and support.`}
-        buttonText="Get Free Quote"
-        buttonLink="/contact"
+        buttonText="Schedule Your Removal"
+        buttonLink="https://calendar.app.google/S8TaQaP9DRGngVtV7"
         backgroundImage="/images/floor-demo-team-work.jpg"
       />
 
@@ -92,8 +92,8 @@ export default function ServiceAreasPage() {
                     >
                       Learn More About {area.name}
                     </Link>
-                    <Button href="/contact" variant="primary" size="sm" className="w-full">
-                      Get Quote for {area.name}
+                    <Button href="https://calendar.app.google/S8TaQaP9DRGngVtV7" variant="primary" size="sm" className="w-full">
+                      Schedule Removal in {area.name}
                     </Button>
                   </div>
                 </div>

@@ -49,15 +49,15 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       ctaProps={{
         title: `READY FOR YOUR ${service.name.toUpperCase()}?`,
         description: `Get a free estimate for your ${service.name.toLowerCase()} project. Fast, safe, and professional service guaranteed.`,
-        primaryButtonText: 'Get Free Quote',
+        primaryButtonText: 'Schedule Your Removal',
       }}
     >
       <Hero
         title={hero.title || defaultHero.title}
         subtitle={hero.subtitle || defaultHero.subtitle}
         description={hero.description || defaultHero.description}
-        buttonText={`Get Free ${service.name} Quote`}
-        buttonLink="/contact"
+        buttonText={`Schedule Your ${service.name}`}
+        buttonLink="https://calendar.app.google/S8TaQaP9DRGngVtV7"
         backgroundImage={hero.backgroundImage || defaultHero.backgroundImage}
       />
 

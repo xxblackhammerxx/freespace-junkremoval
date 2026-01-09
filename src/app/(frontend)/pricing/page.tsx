@@ -130,8 +130,8 @@ export default function PricingPage() {
         title="TRANSPARENT PRICING"
         subtitle="No Hidden Fees, No Surprises"
         description="Get clear, upfront pricing for all our junk removal services throughout Northern Utah. What you see is what you pay - it's that simple."
-        buttonText="Get Free Quote"
-        buttonLink="/contact"
+        buttonText="Schedule Your Removal"
+        buttonLink="https://calendar.app.google/S8TaQaP9DRGngVtV7"
         backgroundImage="/images/default.webp"
       />
 
@@ -185,14 +185,48 @@ export default function PricingPage() {
                 </div>
                 
                 <div className="mt-6 pt-6 border-t border-gray-200">
-                  <Button href="/contact" variant="primary" className="w-full">
-                    Book This Service
+                  <Button href="https://calendar.app.google/S8TaQaP9DRGngVtV7" variant="primary" className="w-full">
+                    Schedule Your Removal
                   </Button>
                 </div>
               </div>
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Google Calendar Scheduling Section */}
+        <AnimatedSection delay={500}>
+          <div className="bg-gradient-to-r from-primary to-primary-700 rounded-xl p-8 text-center text-white mb-16">
+            <h3 className="text-2xl sm:text-3xl font-heading font-bold mb-4">
+              SCHEDULE YOUR JUNK REMOVAL NOW
+            </h3>
+            <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
+              Ready to get started? Book your appointment online and we'll take care of the rest.
+            </p>
+            
+            {/* Google Calendar Appointment Scheduling begin */}
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet"/>
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  (function() {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function() {
+                      calendar.schedulingButton.load({
+                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2AqtZJq9tK525xatbu_cOP-YHZQbrO8HZf4tkQ5LSuAAHUWVoMIeHIZ553E376dnnJ8BQdpJws?gv=true',
+                        color: '#039BE5',
+                        label: 'Book an appointment',
+                        target,
+                      });
+                    });
+                  })();
+                `
+              }}
+            />
+            {/* end Google Calendar Appointment Scheduling */}
+          </div>
+        </AnimatedSection>
 
         {/* Add-on Services */}
         <AnimatedSection delay={600}>
@@ -355,8 +389,8 @@ export default function PricingPage() {
               </div>
               
               <div className="space-y-4">
-                <Button href="/contact" variant="primary" size="lg" className="w-full">
-                  Get Free Quote Now
+                <Button href="https://calendar.app.google/S8TaQaP9DRGngVtV7" variant="primary" size="lg" className="w-full">
+                  Schedule Your Removal
                 </Button>
                 
                 <div className="text-center border-t pt-4">
@@ -460,8 +494,8 @@ export default function PricingPage() {
               Experience the difference of honest, upfront pricing with professional junk removal service throughout Northern Utah.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="/contact" variant="accent" size="lg">
-                Get Your Free Quote
+              <Button href="https://calendar.app.google/S8TaQaP9DRGngVtV7" variant="accent" size="lg">
+                Schedule Your Removal
               </Button>
               <Button href="/services" variant="secondary" size="lg">
                 View All Services

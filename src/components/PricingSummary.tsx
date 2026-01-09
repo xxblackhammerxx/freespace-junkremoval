@@ -180,7 +180,7 @@ const PricingSummary = () => {
         <AnimatedSection delay={600}>
           <div className="text-center">
             <div className="mb-6">
-              <Button href="/contact" variant="primary" size="lg" className="mr-4 mb-4 sm:mb-0">
+              <Button href="https://calendar.app.google/S8TaQaP9DRGngVtV7" variant="primary" size="lg" className="mr-4 mb-4 sm:mb-0">
                 Schedule Junk Removal
               </Button>
               <Button href="/pricing" variant="secondary" size="lg">

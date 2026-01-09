@@ -24,8 +24,8 @@ export default function ServicesPage() {
         title="PROFESSIONAL SERVICES"
         subtitle={`${config.contact.address.serviceArea}'s Trusted Service Contractors`}
         description={`${config.business.description} Licensed, insured contractors ready to handle your project with expertise and care.`}
-        buttonText="Get Free Quote"
-        buttonLink="/contact"
+        buttonText="Schedule Your Removal"
+        buttonLink="https://calendar.app.google/S8TaQaP9DRGngVtV7"
         backgroundImage="/images/floor-demo-team-work.jpg"
       />
 
